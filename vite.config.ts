@@ -6,7 +6,4 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [react(), svgr(), tsconfigPaths(), VitePWA()],
-  test: {
-    environment: "jsdom",
-  },
 });
