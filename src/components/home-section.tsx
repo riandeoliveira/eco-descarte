@@ -4,29 +4,29 @@ import type { ReactElement } from "react";
 export const HomeSection = (): ReactElement => {
   return (
     <section id="home" className="flex gap-12 tablet-s:gap-6 items-center tablet-s:flex-col">
-      <div className="flex-[0.5]">
-        <img
-          src={images.idea}
-          alt="Duas pessoas sentadas em uma mesa com um laptop e uma lâmpada acesa."
-          width={400}
-          height={400}
-          data-aos="fade-right"
-        />
-      </div>
       <div
-        data-aos="fade-left"
+        data-aos="fade-right"
         className="flex-1 flex flex-col justify-center gap-8 tablet-s:gap-4"
       >
         <h1
-          className="text-blue-500 text-7xl laptop-s:text-5xl tablet-s:text-3xl"
-          style={{ textShadow: "0 0 20px #3b82f6" }}
+          className="text-green-500 uppercase flex items-center"
+          style={{ textShadow: "0 0 10px #22c55e" }}
         >
-          Aumente Suas Vendas com a Bot Campanha
+          <strong className="text-[230px] font-semibold">Re</strong>
+          <div className="flex flex-col">
+            <span className="text-6xl font-bold">duza</span>
+            <span className="text-6xl font-bold">use</span>
+            <span className="text-6xl font-bold">cicle</span>
+          </div>
         </h1>
         <p className="text-lg text-zinc-500 laptop-s:text-base">
-          Envie mensagens ilimitadas e automatize conversas para potencializar seu marketing no
-          WhatsApp.
+          Descubra como pequenas ações podem ter um grande impacto no meio ambiente. Aprenda a
+          separar, reciclar e descartar seus resíduos da maneira correta, contribuindo para um
+          futuro mais limpo e sustentável.
         </p>
+      </div>
+      <div className="flex-[0.6] scale-125">
+        <img src={images.bg1} alt="" width={400} height={400} data-aos="fade-left" />
       </div>
     </section>
   );

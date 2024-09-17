@@ -7,7 +7,7 @@ export const NavLink = ({ children, className, ...props }: NavLinkProps): ReactE
   return (
     <a
       className={cn(
-        "text-white uppercase hover:text-blue-500 transition-colors font-semibold",
+        "text-zinc-950 uppercase hover:text-green-500 transition-colors font-semibold",
         className,
       )}
       {...props}

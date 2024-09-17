@@ -36,21 +36,20 @@ export const Header = (): ReactElement => {
         style={{ height: `${headerHeight}px` }}
         className={cn(
           "flex justify-center mx-4 mt-8 tablet-s:mt-0",
-          isHeaderFixed ? "fixed top-0 left-0 right-0 bg-zinc-900 z-50 m-0 px-4" : "",
+          isHeaderFixed ? "fixed top-0 left-0 right-0 bg-zinc-200 z-50 m-0 px-4" : "",
         )}
       >
         <div className="flex justify-between w-[1200px] items-center">
           <nav className="flex gap-12 laptop-s:hidden">
             <NavLink href="#">Início</NavLink>
-            <NavLink href="#home">Características</NavLink>
-            <NavLink href="#">Preços</NavLink>
-            <NavLink href="#">Perguntas Frequentes</NavLink>
-            <NavLink href="#">Ajuda</NavLink>
+            <NavLink href="#">Sobre</NavLink>
+            <NavLink href="#">Dúvidas frequentes</NavLink>
+            <NavLink href="#">Saiba mais</NavLink>
           </nav>
           <Tooltip title="Faça seu login" className="laptop-s:hidden">
             <div>
-              <Link href="https://www.botcampanha.com/app_Login/" target="_blank">
-                Entre
+              <Link href="#" target="_blank">
+                Teste
               </Link>
             </div>
           </Tooltip>

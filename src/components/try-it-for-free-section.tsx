@@ -17,7 +17,7 @@ export const TryItForFreeSection = (): ReactElement => {
         className="flex-1 flex flex-col justify-center gap-4 tablet-s:gap-2"
       >
         <h2
-          style={{ textShadow: "0 0 20px #3b82f6" }}
+          style={{ textShadow: "0 0 10px #22c55e" }}
           className="text-blue-500 text-4xl laptop-s:text-3xl"
         >
           Experimente Gratuitamente Hoje Mesmo!

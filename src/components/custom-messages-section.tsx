@@ -7,7 +7,7 @@ export const CustomMessagesSection = (): ReactElement => {
     <section className="bg-zinc-900 rounded-3xl p-12 laptop-s:p-6">
       <h2
         data-aos="fade-in"
-        style={{ textShadow: "0 0 20px #3b82f6" }}
+        style={{ textShadow: "0 0 10px #22c55e" }}
         className="text-blue-500 text-4xl text-center mb-12 laptop-s:text-3xl laptop-s:mb-6"
       >
         Envio de Mensagens Personalizadas
