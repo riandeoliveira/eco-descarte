@@ -4,7 +4,7 @@ import { InfoCard } from "./info-card";
 
 export const CharacteristicsSection = (): ReactElement => {
   return (
-    <section id="characteristics">
+    <section id="about">
       <h1 data-aos="fade-right" className="text-4xl text-green-500 mb-4 laptop-s:text-2xl">
         Por Que o Descarte Correto é Essencial?
       </h1>
@@ -12,7 +12,7 @@ export const CharacteristicsSection = (): ReactElement => {
         O descarte adequado de lixo é fundamental para a proteção ambiental e a saúde pública. Aqui
         estão os principais motivos:
       </p>
-      <div className="grid grid-cols-2 gap-8 mt-12">
+      <div className="grid grid-cols-2 tablet-m:grid-cols-1 tablet-m:gap-4 gap-8 mt-12">
         <InfoCard
           title="Proteção ao Meio Ambiente"
           description="O lixo inadequado contamina solos, prejudicando a fauna e flora. Descartar

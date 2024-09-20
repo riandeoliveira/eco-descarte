@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { Tooltip } from "@mui/material";
 import { useEffect, useState, type ReactElement } from "react";
 import { Link } from "./link";
 import { MobileMenu } from "./mobile-menu";
@@ -40,19 +39,17 @@ export const Header = (): ReactElement => {
         )}
       >
         <div className="flex justify-between w-[1200px] items-center">
-          <nav className="flex gap-12 laptop-s:hidden">
+          <nav className="flex gap-8 tablet-m:hidden">
             <NavLink href="#">Início</NavLink>
-            <NavLink href="#">Sobre</NavLink>
-            <NavLink href="#">Dúvidas frequentes</NavLink>
-            <NavLink href="#">Saiba mais</NavLink>
+            <NavLink href="#about">Sobre</NavLink>
+            <NavLink href="#garbage_types">Tipos de Lixo</NavLink>
+            <NavLink href="#questions">Dúvidas Frequentes</NavLink>
           </nav>
-          <Tooltip title="Faça seu login" className="laptop-s:hidden">
-            <div>
-              <Link href="#" target="_blank">
-                Teste
-              </Link>
-            </div>
-          </Tooltip>
+          <div className="tablet-m:hidden">
+            <Link href="https://www.reciclasampa.com.br/aprenda-a-reciclar" target="_blank">
+              Aprenda a Reciclar
+            </Link>
+          </div>
           <MobileMenu />
         </div>
       </header>

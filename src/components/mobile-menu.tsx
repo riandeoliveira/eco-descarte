@@ -18,45 +18,40 @@ export const MobileMenu = (): ReactElement => {
 
   return (
     <>
-      <Icon.Home className="text-blue-500 !text-4xl !hidden laptop-s:!block" />
-      <IconButton color="info" onClick={handleClick} className="!hidden laptop-s:!block">
-        <Icon.Menu className="text-blue-500 !text-4xl" />
+      <Icon.Home className="text-green-500 !text-4xl !hidden tablet-m:!block" />
+      <IconButton color="info" onClick={handleClick} className="!hidden tablet-m:!block">
+        <Icon.Menu className="text-green-500 !text-4xl" />
       </IconButton>
       <Menu
         anchorEl={anchorElement}
         open={isOpen}
         onClose={handleClose}
-        className="!hidden laptop-s:!block"
+        className="!hidden tablet-m:!block"
       >
         <MenuItem>
-          <NavLink href="#home" className="w-full">
+          <NavLink href="#" className="w-full">
             Início
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink href="#characteristics" className="w-full">
-            Características
+          <NavLink href="#about" className="w-full">
+            Sobre
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink href="#" className="w-full">
-            Preços
+          <NavLink href="#garbage_types" className="w-full">
+            Tipos de Lixo
           </NavLink>
         </MenuItem>
         <MenuItem>
-          <NavLink href="#" className="w-full">
-            Perguntas Frequentes
-          </NavLink>
-        </MenuItem>
-        <MenuItem>
-          <NavLink href="#" className="w-full">
-            Ajuda
+          <NavLink href="#questions" className="w-full">
+            Dúvidas Frequentes
           </NavLink>
         </MenuItem>
         <Divider />
         <MenuItem>
-          <Link href="https://www.botcampanha.com/app_Login/" target="_blank">
-            Entre
+          <Link href="https://www.reciclasampa.com.br/aprenda-a-reciclar" target="_blank">
+            Aprenda a Reciclar
           </Link>
         </MenuItem>
       </Menu>
