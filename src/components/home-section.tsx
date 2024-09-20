@@ -30,7 +30,7 @@ export const HomeSection = (): ReactElement => {
           futuro mais limpo e sustentável.
         </p>
       </div>
-      <div className="flex-[0.6] scale-125">
+      <div className="flex-[0.6]">
         <img src={images.bg1} alt="" width={400} height={400} data-aos="fade-left" />
       </div>
     </section>
